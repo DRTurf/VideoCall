@@ -4,9 +4,10 @@ import React from 'react'
 const HomePage = () => {
   const day = new Date();
 
-  const time =day.toLocaleTimeString('en-IN', {
+  const time =day.toLocaleTimeString('en-US', {
     hour:'2-digit',
-    minute:'2-digit'
+    minute:'2-digit',
+    timeZone: 'Asia/Kolkata'
   });
   const date = (new Intl.DateTimeFormat('en-IN',{
     dateStyle:'full'
